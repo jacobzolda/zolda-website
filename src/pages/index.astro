@@ -1,19 +1,14 @@
 ---
-// Welcome to Astro! Everything between these triple-dash code fences
-// is your "component frontmatter". It never runs in the browser.
-console.log('This runs in your terminal, not the browser!');
+import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout title="Home | Jake Portfolio" description="Creative technologist portfolio">
+  <section class="space-y-4">
+    <p class="text-sm uppercase tracking-[0.2em] text-zinc-400">Personal Portfolio</p>
+    <h1 class="text-4xl font-bold tracking-tight md:text-5xl">Creative Technologist</h1>
+    <p class="max-w-2xl text-zinc-300">
+      I build projects across film, game design, mocap, and hardware. This site is structured as a curated archive
+      of my process and outcomes.
+    </p>
+  </section>
+</BaseLayout>

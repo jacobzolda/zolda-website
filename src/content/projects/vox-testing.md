@@ -1,6 +1,6 @@
 ---
-title: "Vox Ex Machina"
-date: 2025-09-12
+title: "Vox Ex Machina V2 Testing"
+date: 2025-08-12
 section: "vox"
 tags:
   - "opera"

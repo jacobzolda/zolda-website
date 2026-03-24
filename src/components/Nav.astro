@@ -1,20 +1,19 @@
 ---
 const links = [
   { href: "/", label: "Home" },
-  { href: "/work", label: "Work" },
+  { href: "/gallery", label: "Gallery" },
+  { href: "/vox-ex-machina", label: "Vox Ex Machina" },
   { href: "/cinematography", label: "Cinematography" },
   { href: "/game-design", label: "Game Design" },
   { href: "/mocap", label: "Mocap" },
-  { href: "/vox-ex-machina", label: "Vox Ex Machina" },
   { href: "/hardware", label: "Hardware" },
-  { href: "/resume", label: "Resume" },
-  { href: "/contact", label: "Contact" }
+  { href: "/resume", label: "Resume" }
 ];
 ---
 
 <header class="border-b border-zinc-800">
   <nav class="mx-auto flex w-full max-w-5xl flex-wrap items-center gap-4 px-4 py-4 text-sm">
-    <a href="/" class="mr-3 text-base font-semibold tracking-tight">Jake Portfolio</a>
+    <a href="/" class="mr-3 text-base font-semibold tracking-tight">Portfolio</a>
     {links.map((link) => (
       <a class="text-zinc-300 transition hover:text-white" href={link.href}>{link.label}</a>
     ))}

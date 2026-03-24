@@ -1,8 +1,25 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import ProjectCard from "../../components/ProjectCard.astro";
+import { getCollection } from "astro:content";
+
+const projects = (await getCollection("projects"))
+  .filter((project) => project.data.section === "vox")
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 ---
 
-<BaseLayout title="Vox Ex Machina | Jake Portfolio">
+<BaseLayout title="Vox Ex Machina | Portfolio">
   <h1 class="text-3xl font-bold tracking-tight">Vox Ex Machina</h1>
-  <p class="mt-3 text-zinc-300">Videos, pictures, and links for opera project.</p>
+  <p class="mt-3 text-zinc-300">Opera performance technology project.</p>
+  <section class="mt-8 grid gap-4 sm:grid-cols-2">
+    {projects.map((project) => (
+      <ProjectCard
+        title={project.data.title}
+        description={project.data.description}
+        href={`/gallery/${project.slug}`}
+        section={project.data.section}
+        date={project.data.date}
+      />
+    ))}
+  </section>
 </BaseLayout>

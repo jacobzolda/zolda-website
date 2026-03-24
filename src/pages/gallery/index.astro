@@ -1,8 +1,30 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+import { getCollection } from "astro:content";
+import ProjectCard from "../../components/ProjectCard.astro";
+
+const projects = (await getCollection("projects")).sort(
+  (a, b) => b.data.date.getTime() - a.data.date.getTime()
+);
 ---
 
 <BaseLayout title="Gallery | Portfolio" description="All portfolio projects">
-  <h1 class="text-3xl font-bold tracking-tight">Gallery</h1>
-  <p class="mt-3 max-w-2xl text-zinc-300">All projects will live here with tag and section filters in Step 7.</p>
+  <section class="space-y-4">
+    <h1 class="text-3xl font-bold tracking-tight">Gallery</h1>
+    <p class="max-w-2xl text-zinc-300">
+      All projects in one place. Each card is generated from Markdown content so updates stay fast and consistent.
+    </p>
+  </section>
+
+  <section class="mt-8 grid gap-4 sm:grid-cols-2">
+    {projects.map((project) => (
+      <ProjectCard
+        title={project.data.title}
+        description={project.data.description}
+        href={`/gallery/${project.slug}`}
+        section={project.data.section}
+        date={project.data.date}
+      />
+    ))}
+  </section>
 </BaseLayout>

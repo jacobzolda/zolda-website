@@ -3,17 +3,15 @@ Content for each project broken down by webpage and project:
 Vox Ex Machina:
     Initial prototype:
         * pictures 
-        * video
-        * description
 
     Testing:
-        * video
         * pictures
 
     Performance:
         * pictures
-        * video
-        * links
+
+    Video:
+        * link
 
 Cinematography
     Espresso Martini:
@@ -21,6 +19,10 @@ Cinematography
         * 3 pictures
 
     Kona Snorkeling:
+        * link
+        * 3 pictures
+
+    Hawaii Vlog:
         * link
         * 3 pictures
 
@@ -35,21 +37,15 @@ Game Design
 
     The Northman
         * slide board
-        * design doc
 
 MOCAP
     Demo reel:
-        * video
-
-    Water Mill:
-        * pictures
-        * video
+        * link
 
 Hardware:
-    Digital navigator:
-        * pictures
 
     Controller mod:
+        * link
         * pictures
         * cost difference
     
@@ -57,11 +53,11 @@ Hardware:
         * pictures
 
 Software:
-    Biometric:
+    School projects:
         * github
-        * picture
         * description
 
-    Web design:
+    Biometric:
+        * links
         * github
         * description

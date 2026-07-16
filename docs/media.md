@@ -2,62 +2,63 @@ Content for each project broken down by webpage and project:
 
 Vox Ex Machina:
     Initial prototype:
-        * pictures 
+        - [ ] pictures 
 
     Testing:
-        * pictures
+        - [ ] pictures
 
     Performance:
-        * pictures
+        - [ ] pictures
 
     Video:
-        * link
+        - [x] description
+        - [x] link
 
 Cinematography
     Espresso Martini:
-        * link
-        * 3 pictures
+        - [x] link
+        - [ ] 3 pictures
 
     Kona Snorkeling:
-        * link
-        * 3 pictures
+        - [x] link
+        - [ ] 3 pictures
 
     Hawaii Vlog:
-        * link
-        * 3 pictures
+        - [ ] link
+        - [ ] 3 pictures
 
     The Broker's Special
-        * script
+        - [ ] script
 
 Game Design
     Darkheart Slash
-        * picture
-        * description
-        * design document
+        - [ ] link
+        - [ ] description
+        - [ ] design document
 
     The Northman
-        * slide board
+        - [ ] slide board
 
 MOCAP
     Demo reel:
-        * link
+        - [x] link
 
 Hardware:
 
     Controller mod:
-        * link
-        * pictures
-        * cost difference
+        - [x] link
+        - [ ] pictures
+        - [ ] cost difference
     
     Custom prototypes:
-        * pictures
+        - [ ] pictures
 
 Software:
     School projects:
-        * github
-        * description
+        - [x] github
+        - [ ] description
 
     Biometric:
-        * links
-        * github
-        * description
+        - [x] links
+        - [x] github
+        - [ ] description

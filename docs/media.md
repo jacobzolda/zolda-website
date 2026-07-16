@@ -1,12 +1,6 @@
 Content for each project broken down by webpage and project:
 
 Vox Ex Machina:
-    Initial prototype:
-        - [ ] pictures 
-
-    Testing:
-        - [ ] pictures
-
     Performance:
         - [ ] pictures
 

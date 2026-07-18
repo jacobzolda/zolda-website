@@ -1,17 +1,20 @@
 ---
+import { toEmbedUrl } from "../lib/embed";
+
 interface Props {
   src: string;
   title: string;
 }
 
 const { src, title } = Astro.props;
+const embedSrc = toEmbedUrl(src);
 ---
 
 <div class="overflow-hidden rounded-lg border border-zinc-800">
   <div class="relative w-full" style="padding-top: 56.25%;">
     <iframe
       class="absolute left-0 top-0 h-full w-full"
-      src={src}
+      src={embedSrc}
       title={title}
       loading="lazy"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

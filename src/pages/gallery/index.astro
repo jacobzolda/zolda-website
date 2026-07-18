@@ -12,7 +12,6 @@ const projects = (await getCollection("projects")).sort(
   <section class="space-y-4">
     <h1 class="text-3xl font-bold tracking-tight">Gallery</h1>
     <p class="max-w-2xl text-zinc-300">
-      All projects in one place. Each card is generated from Markdown content so updates stay fast and consistent.
     </p>
   </section>
 
@@ -21,9 +20,10 @@ const projects = (await getCollection("projects")).sort(
       <ProjectCard
         title={project.data.title}
         description={project.data.description}
-        href={`/gallery/${project.slug}`}
+        href={project.slug === "vox-ex-machina" ? "/vox-ex-machina" : `/gallery/${project.slug}`}
         section={project.data.section}
         date={project.data.date}
+        dateLabel={project.data.dateLabel}
       />
     ))}
   </section>

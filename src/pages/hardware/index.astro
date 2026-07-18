@@ -19,6 +19,7 @@ const projects = (await getCollection("projects"))
         href={`/gallery/${project.slug}`}
         section={project.data.section}
         date={project.data.date}
+        dateLabel={project.data.dateLabel}
       />
     ))}
   </section>

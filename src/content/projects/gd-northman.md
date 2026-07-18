@@ -5,13 +5,12 @@ section: "game-design"
 tags:
   - "combat design"
   - "systems design"
+  - "concept"
 role:
   - "Game Designer"
-description: "Action-combat concept."
+description: "An action-combat game concept, presented as a slide board pitch."
 media:
   images: []
 links:
-  itch: "https://itch.io/"
+  pdf: "/files/northman_slides.pdf"
 ---
-
-Darkheart Slash description.

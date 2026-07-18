@@ -1,6 +1,6 @@
 ---
-title: "Broker's Special Screenplay"
-date: 2025
+title: "The Broker's Special"
+date: 2025-09
 section: "cinematography"
 tags:
   - "short film"
@@ -9,10 +9,9 @@ role:
   - "Writer"
 tools:
   - "Final Draft"
-description: "Short-form visual project."
+description: "A short film screenplay written in Final Draft. Based on short story of the same name."
 media:
-  vimeo: "https://vimeo.com/"
   images: []
+links:
+  pdf: "/files/brokers_special.pdf"
 ---
-
-Description of short film

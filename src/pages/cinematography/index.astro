@@ -10,7 +10,7 @@ const projects = (await getCollection("projects"))
 
 <BaseLayout title="Cinematography | Portfolio">
   <h1 class="text-3xl font-bold tracking-tight">Cinematography</h1>
-  <p class="mt-3 text-zinc-300">Film projects pulled directly from the project collection.</p>
+  <p class="mt-3 text-zinc-300">Film projects.</p>
   <section class="mt-8 grid gap-4 sm:grid-cols-2">
     {projects.map((project) => (
       <ProjectCard
@@ -19,6 +19,7 @@ const projects = (await getCollection("projects"))
         href={`/gallery/${project.slug}`}
         section={project.data.section}
         date={project.data.date}
+        dateLabel={project.data.dateLabel}
       />
     ))}
   </section>

@@ -1,16 +1,28 @@
 ---
 title: "Vox Ex Machina Circuits"
-date: 2025-08
+date: "2025"
+dateLabel: "2025"
 section: "hardware"
 tags:
-    - "hardware"
-    - "prototype"
+  - "hardware"
+  - "prototype"
+  - "circuit design"
 role:
-    - "designer"
-    - "technician"
+  - "Circuit Designer"
 tools:
-    - "soldering station"
-description: "Custom circuits for opera project."
+  - "soldering station"
+  - "TMC2209 stepper drivers"
+description: "Custom circuit design and prototyping for the Vox Ex Machina motion-control system."
 media:
-    youtube: "https://www.youtube.com"
+  images:
+    - src: "/images/projects/VEM_design1.jpg"
+      alt: "Vox Ex Machina circuit design and prototyping"
+    - src: "/images/projects/VEM_design2.jpg"
+      alt: "Vox Ex Machina circuit design and prototyping"
+    - src: "/images/projects/VEM_design3.jpg"
+      alt: "Vox Ex Machina circuit design and prototyping"
+    - src: "/images/projects/VEM_design4.jpg"
+      alt: "Vox Ex Machina circuit design and prototyping"
 ---
+
+Design was iterated from breadboard prototyping to a permanent protoboard using solder for live performance.

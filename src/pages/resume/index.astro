@@ -1,10 +1,184 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
+
+const skills = [
+  { label: "Programming", value: "Python, C, C#, C++, CUDA, HDL" },
+  {
+    label: "Hardware",
+    value: "Arduino, ESP32, FPGA, stepper motors & drivers, AC/DC circuits, Raspberry Pi, TI microcontrollers"
+  },
+  {
+    label: "Signal Processing",
+    value: "Real-time DSP for biometric analysis, signal decomposition, artifact mitigation"
+  },
+  {
+    label: "Tools & Workflow",
+    value: "Git / GitHub, VS Code, Onshape, Linux, Unity, Unreal Engine, Vicon/Shogun, DaVinci Resolve, Final Draft 13, Max/MSP 9, PyQt GUI"
+  }
+];
+
+const experience = [
+  {
+    org: "ExCITe Center",
+    location: "Philadelphia, PA",
+    role: "Digital Navigator",
+    dates: "May 2023 – March 2025",
+    bullets: [
+      "Repaired and distributed 150+ desktops and laptops for community technology-access programs in West Philadelphia.",
+      "Provided hardware replacement, debugging, OS installation, and end-user technical support at West Philadelphia Community Center.",
+      "Collaborated with an interdisciplinary team to expand access to low-cost internet, computers, and digital-skills education."
+    ]
+  },
+  {
+    org: "Toshiba Global Commerce Solutions",
+    location: "Jacksonville, FL",
+    role: "Field Service IT Technician",
+    dates: "Jan 2022 – Jul 2022",
+    bullets: [
+      "Independently maintained retail store technologies, computer systems, and peripherals within store and commercial business environments. Performed a full workload of product installation, support services, and repair on electronic retail devices and in-store systems.",
+      "Accountable for customer satisfaction, inventory, and operational activities as required for the services provided."
+    ]
+  },
+  {
+    org: "U.S. Navy - USS The Sullivans",
+    location: "",
+    role: "Electronics Technician",
+    dates: "Oct 2015 – Oct 2021",
+    bullets: [
+      "Served aboard USS The Sullivans, maintaining surface-ship exterior communications, radar / air-detection, navigation, and cryptographic equipment; supervised six junior technicians and ensured operational readiness.",
+      "Awarded two Navy Achievement Medals for exceptional service and repair of high-frequency radio communications pre-deployment, and critical data-link systems in a joint multinational strike group."
+    ]
+  },
+  {
+    org: "ARH Associates",
+    location: "Hammonton, NJ",
+    role: "CAD Technician",
+    dates: "Oct 2014 – Sep 2015",
+    bullets: [
+      "Produced and corrected civil-engineering and surveying drawings in AutoCAD, refining survey maps for tax-mapping and routing projects."
+    ]
+  }
+];
 ---
 
-<BaseLayout title="Resume | Portfolio">
-  <h1 class="text-3xl font-bold tracking-tight">Resume</h1>
-  <p class="mt-3 text-zinc-300">Professional summary, experience, and a downloadable resume link.
-    Also include contact information.
-  </p>
+<BaseLayout
+  title="Resume | Jacob Zolda"
+  description="Resume for Jacob Zolda — Computer Engineer, Creative Technology."
+>
+  <div class="space-y-10">
+    <header class="space-y-3 border-b border-zinc-800 pb-6">
+      <div class="flex flex-wrap items-start justify-between gap-4">
+        <div>
+          <h1 class="text-3xl font-bold tracking-tight md:text-4xl">Jacob Zolda</h1>
+          <p class="mt-1 text-zinc-300">Computer Engineer | Creative Technology</p>
+        </div>
+        <a
+          href="/files/JacobZolda_Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center rounded-md border border-zinc-700 px-4 py-2 text-sm font-medium text-zinc-100 transition hover:border-zinc-500 hover:bg-zinc-900"
+        >
+          Download PDF
+        </a>
+      </div>
+      <div class="flex flex-wrap gap-x-4 gap-y-1 text-sm text-zinc-400">
+        <span>Philadelphia, PA</span>
+        <a class="font-bold underline hover:text-white" href="tel:6094421161">609-442-1161</a>
+        <a class="font-bold underline hover:text-white" href="mailto:jakezolda@gmail.com">jakezolda@gmail.com</a>
+        <a class="font-bold underline hover:text-white" href="https://github.com/jacobzolda" target="_blank" rel="noopener noreferrer">
+          GitHub: jacobzolda
+        </a>
+        <a class="font-bold underline hover:text-white" href="https://www.linkedin.com/in/jacob-zolda-a736b7227/" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </div>
+    </header>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Profile</h2>
+      <p class="text-zinc-300">
+        Computer engineer and U.S. Navy veteran who builds embedded and real-time
+        systems where technology meets creative media. Hands-on experience spanning
+        live-performance robotics, wearable signal-processing platforms, various
+        programming projects, and cinematic production. Seeking an engineering role in
+        the film or video-game industry where technical depth supports creative
+        storytelling.
+      </p>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Education</h2>
+      <div class="flex flex-wrap items-baseline justify-between gap-2">
+        <p class="font-medium text-zinc-100">Drexel University, Philadelphia, PA</p>
+        <p class="text-sm text-zinc-400">June 2026</p>
+      </div>
+      <p class="text-zinc-300">Bachelor of Science, Computer Engineering - GPA: 3.10 / 4.00</p>
+      <p class="text-sm text-zinc-400">
+        <span class="font-medium text-zinc-300">Relevant coursework:</span> Embedded
+        System Design, Data Structures, Parallel Programming, Computer Architecture,
+        Processor Design, Linear Algebra
+      </p>
+      <p class="text-sm text-zinc-400">
+        <span class="font-medium text-zinc-300">Creative courses:</span> Cinematography,
+        Game Scripting, Motion Capture, Film Studies, Screenwriting, Game Writing
+      </p>
+    </section>
+
+    <section class="space-y-3">
+      <h2 class="text-xl font-semibold">Technical Skills</h2>
+      <dl class="space-y-2">
+        {skills.map((s) => (
+          <div class="flex flex-col gap-1 sm:flex-row sm:gap-3">
+            <dt class="w-full shrink-0 font-medium text-zinc-100 sm:w-40">{s.label}</dt>
+            <dd class="text-zinc-300">{s.value}</dd>
+          </div>
+        ))}
+      </dl>
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Featured Projects</h2>
+      <p class="text-zinc-300">
+        See full write-ups for <a class="underline decoration-zinc-600 underline-offset-4 hover:text-white" href="/vox-ex-machina">Vox Ex Machina</a> and the
+        <a class="underline decoration-zinc-600 underline-offset-4 hover:text-white" href="/gallery/sw-biometric">Biometric Signal Processing Application</a>
+        elsewhere on this site, along with the rest of the project gallery.
+      </p>
+    </section>
+
+    <section class="space-y-6">
+      <h2 class="text-xl font-semibold">Experience</h2>
+      {experience.map((job) => (
+        <div class="space-y-1">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <p class="font-medium text-zinc-100">
+              {job.org}{job.location && `, ${job.location}`}
+            </p>
+            <p class="text-sm text-zinc-400">{job.dates}</p>
+          </div>
+          <p class="text-sm italic text-zinc-400">{job.role}</p>
+          <ul class="list-disc space-y-1 pl-5 text-sm text-zinc-300">
+            {job.bullets.map((b) => <li>{b}</li>)}
+          </ul>
+        </div>
+      ))}
+    </section>
+
+    <section class="space-y-2">
+      <h2 class="text-xl font-semibold">Honors & Certifications</h2>
+      <ul class="list-disc space-y-1 pl-5 text-sm text-zinc-300">
+        <li>Two Navy Achievement Medals - exceptional technical service and equipment repair.</li>
+        <li>
+          Commanding Officer recognitions: Gold Standard Technician, Comprehensive
+          Expertise, Enthusiastic Trainer, Respected Leader, Outstanding Technician
+          Operating at a First-Class Level, Strong Technical Acumen, Adept Technician.
+        </li>
+        <li>
+          Professional training: Data / Satellite / Electronic Communications, Network
+          Essentials, Digital Electronics, Communication Security, AC/DC Circuits,
+          Industrial Safety, Financial Management, Conflict Resolution, Diversity &
+          Inclusion.
+        </li>
+      </ul>
+    </section>
+  </div>
 </BaseLayout>

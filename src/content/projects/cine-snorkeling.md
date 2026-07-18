@@ -10,11 +10,9 @@ role:
   - "Editor"
 tools:
   - "iPhone 12 Pro"
-  - "DaVinci Resolve"
-description: "Short-form visual project."
+  - "Kdenlive"
+description: "A short film capturing a snorkeling trip in Kona, shot on iPhone 12 Pro and edited in Kdenlive."
 media:
-  vimeo: "https://vimeo.com/"
+  youtube: "https://youtu.be/QXRoPoz6QE8?si=jqpaiji3U4Ylpxuz"
   images: []
 ---
-
-Description of short film

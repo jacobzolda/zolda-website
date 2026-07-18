@@ -12,11 +12,14 @@ role:
 tools:
   - "Unity"
   - "C#"
-description: "Action-combat prototype."
+description: "An action-combat prototype built in Unity and C#."
 media:
   images: []
 links:
-  itch: "https://itch.io/"
+  github: "https://github.com/jacobzolda/Unity-Platformer"
+  itch: "https://jacobzolda.itch.io/darkheart-slash"
+  pdf: "/files/platformer_design_doc.pdf"
 ---
 
-Darkheart Slash description.
+Playable on itch.io, with source on
+GitHub and a full design document covering the combat system.

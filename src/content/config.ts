@@ -5,6 +5,7 @@ const projects = defineCollection({
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
+    dateLabel: z.string().optional(),
     section: z.enum(["cinematography", "game-design", "mocap", "vox", "hardware", "software"]),
     tags: z.array(z.string()).default([]),
     role: z.array(z.string()).default([]),
@@ -14,14 +15,17 @@ const projects = defineCollection({
       .object({
         youtube: z.string().url().optional(),
         vimeo: z.string().url().optional(),
-        images: z.array(z.string()).default([])
+        additionalVideos: z.array(z.string().url()).default([]),
+        images: z
+          .array(z.object({ src: z.string(), alt: z.string() }))
+          .default([])
       })
-      .default({ images: [] }),
+      .default({ images: [], additionalVideos: [] }),
     links: z
       .object({
         github: z.string().url().optional(),
         itch: z.string().url().optional(),
-        pdf: z.string().url().optional(),
+        pdf: z.string().optional(),
         writeup: z.string().url().optional(),
         press: z.string().url().optional()
       })
